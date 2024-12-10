@@ -1,0 +1,257 @@
+.body,
+.html {
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+/*.Project h1 {
+
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+padding-top: 30px;
+padding-left:  90px;
+background-image: url(https://i.pinimg.com/474x/49/98/92/499892196f94396f0f4ced4c07c65dcf.jpg);
+height: 18rem;
+z-index: -1;
+position:relative;
+
+
+}*/
+.Project {
+  color: white;
+  font-size: 37px;
+  padding: 4%;
+  padding-bottom: 3%;
+}
+.imgbg {
+  position: relative;
+  background-image: url("https://i.pinimg.com/474x/49/98/92/499892196f94396f0f4ced4c07c65dcf.jpg");
+}
+.imgbg img {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.Project2,
+.Project3,
+.Project4,
+.Project5 {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(44, 24, 24);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Project1 img,
+.Project2 img,
+.Project3 img,
+.Project4 img,
+.Project5 img {
+  width: 100%; /* Make the image take full width of the container */
+  height: auto; /* Preserve the aspect ratio */
+  object-fit: cover; /* Ensures the image is cropped to fit the container, while maintaining aspect ratio */
+}
+
+.PastProject h1 {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  padding-left: 4%;
+  padding-bottom: 1.5%;
+}
+
+.Project2 img {
+  width: 90%;
+  height: 25rem;
+  margin-top: 1.5rem;
+}
+#date {
+  padding: 8px;
+  text-align: center;
+}
+.Project2:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
+
+.Project3 img {
+  width: 90%;
+  height: 25rem;
+  margin-top: 1.5rem;
+}
+
+.Project3:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
+
+.Project4 img {
+  width: 90%;
+  height: 25rem;
+  margin-top: 1.5rem;
+}
+
+.Project4:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
+
+.Project5 img {
+  width: 90%;
+  height: 25rem;
+  margin-top: 1.5rem;
+}
+
+.Project5:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
+
+/*hr*/
+
+.line {
+  color: rgb(240, 229, 182);
+  position: relative;
+  text-align: center;
+  width: 92%;
+  margin: auto;
+}
+.line hr {
+  border: none;
+  border-top: 2px solid #ffcc47;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc47;
+}
+.line::before {
+  left: 0;
+}
+.line::after {
+  right: 0;
+}
+.gridproject {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(350px, 1fr)
+  ); /* Increase the minimum size of the grid items */
+  gap: 3rem; /* Adjust the gap between items */
+  margin: 4%;
+  margin-top: 2%;
+}
+
+.gridproject .Project1,
+.gridproject .Project2,
+.gridproject .Project3,
+.gridproject .Project4,
+.gridproject .Project5 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid white; /* White border around each item */
+  box-sizing: border-box;
+  padding: 10px; /* Adjust padding for spacing */
+  height: 400px; /* Increase the height of the grid container */
+}
+
+.gridproject .Project1 img,
+.gridproject .Project2 img,
+.gridproject .Project3 img,
+.gridproject .Project4 img,
+.gridproject .Project5 img {
+  width: 100%; /* Ensure images fill the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Keep images cropped appropriately */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+.Project1,
+.Project2,
+.Project3,
+.Project4,
+.Project5 {
+  color: rgb(44, 24, 24);
+  text-decoration: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Project1:hover,
+.Project2:hover,
+.Project3:hover,
+.Project4:hover,
+.Project5:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
+
+@media (max-width: 920px) {
+  .gridproject {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .gridproject .Project1,
+  .gridproject .Project2,
+  .gridproject .Project3,
+  .gridproject .Project4,
+  .gridproject .Project5 {
+    height: 350px; /* Smaller height for the grid container on small screens */
+  }
+}
+
+.JeepneyStop {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 5px solid white;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 400px; /* Adjust height to match your grid items */
+  margin: 2%; /* Optional margin for spacing */
+}
+
+.JeepneyStop img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.JeepneyStop h1,
+.JeepneyStop p {
+  color: rgb(44, 24, 24);
+  text-decoration: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.JeepneyStop:hover {
+  box-shadow: 0 0 20px 5px #eaee09fb;
+  transform: scale(1.05);
+}
